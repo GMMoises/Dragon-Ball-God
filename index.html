@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dragon Ball Universe | Transformaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand">★ DRAGON BALL <span>UNIVERSE</span></div>
+        <p>Explorá personajes y liberá su poder</p>
+    </header>
+    <main>
+        <section class="search">
+            <form id="searchForm"><input id="searchInput" placeholder="Buscá Goku, Vegeta, Gohan..."
+                    aria-label="Nombre del personaje" required><button type="submit">Buscar</button></form>
+            <p id="status" role="status">Cargando a Goku...</p>
+        </section>
+        <section class="panel" id="panel" hidden>
+            <div class="art" id="art">
+                <div class="aura" id="aura"></div><img id="characterImage" alt="Personaje de Dragon Ball">
+                <div class="flash" id="flash"></div>
+            </div>
+            <div class="info">
+                <div class="eyebrow">GUERRERO SELECCIONADO</div>
+                <h1 id="characterName"></h1>
+                <h2 id="formName">Forma base</h2>
+                <p id="description"></p>
+                <div class="stats">
+                    <div><span>Raza</span><strong id="race">—</strong></div>
+                    <div><span>Ki</span><strong id="ki">—</strong></div>
+                    <div><span>Ki máximo</span><strong id="maxKi">—</strong></div>
+                    <div><span>Afiliación</span><strong id="affiliation">—</strong></div>
+                </div>
+                <div class="transform"><button id="prev" type="button">← Anterior</button><button id="next"
+                        type="button">⚡ TRANSFORMAR</button></div>
+                <p class="counter" id="counter"></p>
+                <div id="forms" class="forms" aria-label="Transformaciones disponibles"></div>
+            </div>
+        </section>
+    </main>
+    <footer>Datos e imágenes: <a href="https://dragonball-api.com/" target="_blank" rel="noopener">Dragon Ball API</a> ·
+        Proyecto académico de consumo de API pública</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
